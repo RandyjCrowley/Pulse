@@ -53,3 +53,16 @@ Run the application:
   - 'l' to view logs
   - 'esc' to go back
 - 'q' to quit
+
+## TODO
+
+- [ ] Make the UI better
+- [ ] Allow creation of agents
+- [ ] Implement stack scaling (up/down)
+- [ ] Add support for viewing service details within a stack
+- [ ] Implement filtering and searching of stacks
+- [ ] Add support for viewing resource usage (CPU, memory) of containers
+- [ ] Improve log viewing functionality (e.g., follow logs, search logs)
+- [ ] Add support for viewing container environment variables
+- [ ] Implement container inspection functionality (e.g., network settings, volumes)
+- [ ] Add a visual indicator for stack health (e.g. running, stopped, unhealthy)

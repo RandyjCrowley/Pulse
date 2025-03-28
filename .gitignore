@@ -1,0 +1,98 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories
+vendor/
+deps/
+go.sum
+
+# Build directory
+build/
+bin/
+dist/
+
+# IDE and Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Profiling data
+*.prof
+*.pprof
+
+# Mac OS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux system files
+.directory
+.Trash-*
+
+# Docker-specific
+.docker/
+
+# Go module cache
+go.work
+go.work.sum
+
+# Runtime data
+*.pid
+*.seed
+*.pid.lock
+
+# Local development configuration
+.config/
+.local/
+
+# Compiled Object files
+*.o
+*.a
+
+# Project-specific exclusions
+docker-stack-manager
+docker-stack-manager_*
+
+# Backup files
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+
+# Security-sensitive files
+secrets/
+*.key
+*.pem
+.ssh

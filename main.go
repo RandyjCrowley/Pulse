@@ -231,11 +231,15 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			if m.state == "stack" {
 				m.state = "containerList"
 				m.selectedContainer = 0 // Reset selected container when entering container list
-				containers, err := listContainers(context.Background(), m.cli, m.stacks[m.selectedStack])
-				if err != nil {
-					m.logOutput = fmt.Sprintf("Error listing containers: %v", err)
-				} else {
-					m.containers = containers
+				fmt.Println("len(m.stacks)", len(m.stacks))
+				if len(m.stacks) > 0 {
+
+					containers, err := listContainers(context.Background(), m.cli, m.stacks[m.selectedStack])
+					if err != nil {
+						m.logOutput = fmt.Sprintf("Error listing containers: %v", err)
+					} else {
+						m.containers = containers
+					}
 				}
 			} else if m.state == "containerList" && len(m.containers) > 0 {
 				// View logs for the selected container

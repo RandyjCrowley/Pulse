@@ -1,4 +1,4 @@
-module Pulse
+module pulse
 
 go 1.23.0
 
